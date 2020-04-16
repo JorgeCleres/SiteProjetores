@@ -1,3 +1,8 @@
+<?php
+    include 'db.php';
+    //require 'resultado.php'
+    session_start();
+    ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -16,11 +21,17 @@
     <div id="inicio"></div>
     <section class="menuElogo">
         <img src="images/logo/logo.png" alt="">
-        <ul>
-            <a href="index.php#inicio"><li>Inicio</li></a>
-            <a href="#projetosCorporativos"><li>Projetos corporativos</li></a>
-            <a href="index.php#servicos"><li>Serviços</li></a>
-            <a href="index.php#contato"><li>Contato</li></a>
+        <ul class="menu">
+            <li><a href="index.php#inicio">Inicio</a></li>
+            <li><a href="index.php#projetosCorporativos">Projetos corporativos</a>
+                <ul>
+                    <li><a href="projeto1.php">Projeto 1</a></li>
+                    <li><a href="projeto2.php">Projeto 2</a></li>
+                    <li><a href="projeto3.php">Projeto 3</a></li>
+                </ul>
+            </li>
+            <li><a href="index.php#servicos">Serviços</a></li>
+            <li><a href="index.php#contato">Contato</a></li>
             <?php if(!isset($_SESSION['login'])){ ?>
                 <a href="login.php"><img src="images/icons/login.png"></a>
             <?php } ?>
@@ -31,7 +42,7 @@
                 </a>
             <?php } ?>
         </ul>
-    </section>
+    </section><!-- menuElogo -->
     <h2 id="projetoh2">Projeto Tals</h2>
     <section class="projeto">
         <div class="imagens">

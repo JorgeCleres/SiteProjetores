@@ -51,7 +51,7 @@ span {
 .menu li ul {
   position: absolute;
   top: 25px;
-  left: 0;
+  left: 20px;
   background-color: #fff;
   display: none; }
 
@@ -393,7 +393,8 @@ h1 {
       margin: 20px;
       border-radius: 4px; }
   .projeto .info {
-    width: 50%; }
+    width: 50%;
+    margin: 10px; }
     .projeto .info h3 {
       text-align: initial;
       padding: 0 0 26px 0; }

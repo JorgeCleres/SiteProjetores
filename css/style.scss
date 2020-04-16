@@ -36,14 +36,14 @@ span {
     background-color: #fefcfc;
     z-index: 9;
 
-    img{
+    img {
         margin: -15px 0 0 150px;
         width: 139px;
         height: 120px;
     }
 }
-  .menu{
-    li{
+  .menu {
+    li {
       position:relative; 
       display: inline;
     }
@@ -60,23 +60,23 @@ span {
       }
   }
 
-  .menu li a:hover{
+  .menu li a:hover {
     color: blue;
     }
 
-    .menu li ul{
+    .menu li ul {
       position:absolute; 
       top: 25px; 
-      left:0;
+      left: 20px;
       background-color:#fff; 
       display:none;
       }
 
-      .menu li:hover ul, .menu li.over ul{
+      .menu li:hover ul, .menu li.over ul {
         display:block;
       }
 
-      .menu li ul li{
+      .menu li ul li {
         border:1px solid #c0c0c0; 
         display:block; 
         width:150px;
@@ -87,7 +87,7 @@ span {
         margin: 23px 150px 0 0; 
     }
 
-.titulo h1{
+.titulo h1 {
     text-align: center;
     padding: 180px 0 70px 0;
 }
@@ -494,6 +494,7 @@ span {
   
   .info {
     width: 50%;
+    margin: 10px;
 
     h3 {
       text-align: initial;

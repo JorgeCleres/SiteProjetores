@@ -1,3 +1,8 @@
+<?php
+    include 'db.php';
+    //require 'resultado.php'
+    session_start();
+    ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -16,11 +21,17 @@
     <div id="inicio"></div>
     <section class="menuElogo">
         <img src="images/logo/logo.png" alt="">
-        <ul>
-            <a href="#inicio"><li>Inicio</li></a>
-            <a href="#projetosCorporativos"><li>Projetos corporativos</li></a>
-            <a href="#servicos"><li>Serviços</li></a>
-            <a href="#contato"><li>Contato</li></a>
+        <ul class="menu">
+            <li><a href="index.php#inicio">Inicio</a></li>
+            <li><a href="index.php#projetosCorporativos">Projetos corporativos</a>
+                <ul>
+                    <li><a href="projeto1.php">Projeto 1</a></li>
+                    <li><a href="projeto2.php">Projeto 2</a></li>
+                    <li><a href="projeto3.php">Projeto 3</a></li>
+                </ul>
+            </li>
+            <li><a href="index.php#servicos">Serviços</a></li>
+            <li><a href="index.php#contato">Contato</a></li>
             <?php if(!isset($_SESSION['login'])){ ?>
                 <a href="login.php"><img src="images/icons/login.png"></a>
             <?php } ?>
@@ -31,4 +42,21 @@
                 </a>
             <?php } ?>
         </ul>
+    </section><!-- menuElogo -->
+    <h2 id="projetoh2">Projeto Tals</h2>
+    <section class="projeto">
+        <div class="imagens">
+            <img src="images/Images-renan/projeto1/IMG-20191220-WA0040.jpg" alt="">
+            <img src="images/Images-renan/projeto1/IMG-20191220-WA0043.jpg" alt="">
+            <img src="images/Images-renan/projeto1/IMG-20191220-WA0044.jpg" alt="">
+            <img src="images/Images-renan/projeto1/IMG-20191220-WA0048.jpg" alt="">
+            
+        </div>
+        <div class="info">
+            <h3>Sobre o Projeto</h3>
+            <p>Tals tals Tals tals Tals tals Tals tals 
+            Tals tals Tals tals Tals tals Tals tals Tals tals Tals tals 
+            Tals tals Tals tals Tals tals 
+            </p>
+        </div>
     </section>
