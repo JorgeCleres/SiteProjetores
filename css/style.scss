@@ -41,35 +41,51 @@ span {
         width: 139px;
         height: 120px;
     }
+}
+  .menu{
+    li{
+      position:relative; 
+      display: inline;
+    }
+    a {
+        text-decoration:none;
+        font-size: 25px;
+        padding: 18px;
 
+        img {
+          margin: 0;
+          width: 50px;
+          height: 40px;
+        }
+      }
+  }
+
+  .menu li a:hover{
+    color: blue;
+    }
+
+    .menu li ul{
+      position:absolute; 
+      top: 25px; 
+      left:0;
+      background-color:#fff; 
+      display:none;
+      }
+
+      .menu li:hover ul, .menu li.over ul{
+        display:block;
+      }
+
+      .menu li ul li{
+        border:1px solid #c0c0c0; 
+        display:block; 
+        width:150px;
+      }
+  
     ul {
         float: right;
         margin: 23px 150px 0 0; 
-
-        a {
-            text-decoration: none;
-            font-size: 25px;
-            padding: 9px;
-
-            img{
-                width: 46px;
-                margin: -3px;
-                padding: 0px;
-                height: 40px;
-            }
-        }
-
-        li {
-            display: inline;
-        }
     }
-}
-
-.menuElogo a li:hover{
-    margin: 1px;
-    font-size: 26px;
-    color: blue;
-}
 
 .titulo h1{
     text-align: center;
@@ -96,7 +112,7 @@ span {
 
     .topicos {
         float: left;
-        margin: 90px;
+        margin: 50px 0px 0px 45px;
         font-size: 25px;
 
         ul li{
@@ -105,8 +121,8 @@ span {
     }
 
     img {
-        float: left;
-        margin: -110px 10px;
+        //float: left;
+        margin: -140px 10px;
     }
 }
 
@@ -454,3 +470,38 @@ span {
   }
 
 /* fim login */
+
+#projetoh2 {
+  text-align: center;
+  padding: 140px 0 40px 0;
+}
+
+.projeto {
+  display: flex;
+  width: 100%;
+
+  .imagens {
+    width: 50%;
+    padding: 0px 50px;
+
+    img {
+      width: 650px;
+      height: 500px;
+      margin: 20px;
+      border-radius: 4px;
+    }
+  }
+  
+  .info {
+    width: 50%;
+
+    h3 {
+      text-align: initial;
+      padding: 0 0 26px 0;
+    }
+
+    p{
+      width: 500px;
+    }
+  }
+}
