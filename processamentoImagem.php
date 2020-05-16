@@ -30,6 +30,6 @@ if(isset($_POST['submit']))//verifica se foi clicado no submit
             ?><script>alert('erro no upload')</script>
                 <meta http-equiv="refresh" content="0;">
             <?php
-        }
+        }  
     }
 }
